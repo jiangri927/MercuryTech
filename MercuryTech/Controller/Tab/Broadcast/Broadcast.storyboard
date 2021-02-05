@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZYF-NL-qHv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Find People View Controller-->
+        <scene sceneID="3V2-oL-ca9">
+            <objects>
+                <viewController id="4pq-fy-dGG" customClass="FindPeopleViewController" customModule="MercuryTech" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j7L-se-Tr8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finding people near you..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5O-so-ocP">
+                                <rect key="frame" x="86" y="436" width="242" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UL7-O9-m00"/>
+                        <color key="backgroundColor" red="0.078431372550000003" green="0.14901960780000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="J5O-so-ocP" firstAttribute="centerX" secondItem="j7L-se-Tr8" secondAttribute="centerX" id="9As-BV-Ez1"/>
+                            <constraint firstItem="J5O-so-ocP" firstAttribute="centerY" secondItem="j7L-se-Tr8" secondAttribute="centerY" id="fHt-wU-Heg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xcB-A8-4U3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d6M-72-tGr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979.71014492753636" y="86.383928571428569"/>
+        </scene>
+        <!--Base Navigation Controller-->
+        <scene sceneID="ntd-hy-1hH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ZYF-NL-qHv" customClass="BaseNavigationController" customModule="MercuryTech" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1l7-wa-wVF">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4pq-fy-dGG" kind="relationship" relationship="rootViewController" id="U7e-cJ-h4x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39I-iU-DFT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.565217391304358" y="86.383928571428569"/>
+        </scene>
+    </scenes>
+</document>

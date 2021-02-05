@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Bluetooth is used to send message them and find to nearby users.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Bluetooth is used to send message them and find to nearby users.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+		<string>bluetooth-peripheral</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>com.bridgefy.SDKLicense</key>
+	<string>gqRkYXRh3ABIMjAyMC0wMi0yNVQyMjoxMzo1My4wOTJafDIwMjAtMDktMDVUMTg6MjE6MDMuNzczWnxjb20udG9wbGV2Lk1lcmN1cnlUZWNoqXNpZ25hdHVyZdwBAEfMgFvMncyLzNzMpCZlzMTMvXzMqszEZczRJczjKAd6csyPzITM3MzszL7M9czVJQbMxjNYRczrzOonCsyRCczpEHpSNgV2TFEwVcyQzNU3alvMpczCVVprKxZLOczqzMxkK8zEVWUTzOJRFcz0zNPM5szgcMz2zMfMnhbMuD8MMF5zzPfMjczecczEaczSzIQuF8zfzM0fzODMpkbM4MzZzLvMnXDMkcyxzKrMgMz/zP7M+sylCUNZzOUiJsyvzOolaMyOzNt3zKQozNDMjFfMtxJyzOHMngFqJcy/zPRWzIdPLhpFK8znQU7MjczEfsynd8yuzIrMvRVMOczNaMycPMzbHC3Mr8z0zIPMo8ywaWtezIrMzsyHYczKHhbM03LM/SfM/8zPzInMoT98zK7Mo08JFWMCzOrMq8zMzPnMw8ytP0bMv8z8ccySzI/Mlsz+UCgOzOrMyBolzPTM501Xa8zczLnM4MzACiLM43MWaczazKzM58yxzN4rSjcsCQ==</string>
+</dict>
+</plist>

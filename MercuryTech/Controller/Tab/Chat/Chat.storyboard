@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Nn-py-OxU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact View Controller-->
+        <scene sceneID="l8b-s2-8eQ">
+            <objects>
+                <viewController storyboardIdentifier="ContactVC" id="bSy-n7-Hql" customClass="ContactViewController" customModule="MercuryTech" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hTs-yo-PcA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lw-pX-VdP">
+                                <rect key="frame" x="20" y="44" width="94" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8yA-VM-2Rm">
+                                <rect key="frame" x="0.0" y="79" width="414" height="817"/>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.14901960780000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No contacts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g15-qP-5df">
+                                <rect key="frame" x="154" y="436" width="106.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="j5L-h4-6Ou"/>
+                        <color key="backgroundColor" red="0.078431372550000003" green="0.14901960780000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="8yA-VM-2Rm" secondAttribute="bottom" id="0P9-65-xHE"/>
+                            <constraint firstItem="9lw-pX-VdP" firstAttribute="leading" secondItem="j5L-h4-6Ou" secondAttribute="leading" constant="20" id="RAO-9y-DU2"/>
+                            <constraint firstItem="8yA-VM-2Rm" firstAttribute="leading" secondItem="j5L-h4-6Ou" secondAttribute="leading" id="bRd-Dw-x16"/>
+                            <constraint firstItem="9lw-pX-VdP" firstAttribute="top" secondItem="j5L-h4-6Ou" secondAttribute="top" id="chU-4b-LWA"/>
+                            <constraint firstItem="8yA-VM-2Rm" firstAttribute="top" secondItem="9lw-pX-VdP" secondAttribute="bottom" constant="8" id="npQ-VY-fZb"/>
+                            <constraint firstItem="g15-qP-5df" firstAttribute="centerY" secondItem="hTs-yo-PcA" secondAttribute="centerY" id="qMc-nb-Y4l"/>
+                            <constraint firstItem="8yA-VM-2Rm" firstAttribute="trailing" secondItem="j5L-h4-6Ou" secondAttribute="trailing" id="rQn-Lj-jHu"/>
+                            <constraint firstItem="g15-qP-5df" firstAttribute="centerX" secondItem="hTs-yo-PcA" secondAttribute="centerX" id="xSl-7f-axs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Owx-Nj-f8b"/>
+                    <connections>
+                        <outlet property="contactTableView" destination="8yA-VM-2Rm" id="y2l-WP-bcX"/>
+                        <outlet property="noContactsLbl" destination="g15-qP-5df" id="RQd-IM-GI1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JzE-jP-xuQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797.10144927536237" y="95.758928571428569"/>
+        </scene>
+        <!--Base Navigation Controller-->
+        <scene sceneID="4z4-lJ-lJw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="5Nn-py-OxU" customClass="BaseNavigationController" customModule="MercuryTech" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kBV-t1-oBw">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bSy-n7-Hql" kind="relationship" relationship="rootViewController" id="aSe-uB-hSF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRT-3Z-BXh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113.04347826086958" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+</document>
